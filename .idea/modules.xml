@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/member.iml" filepath="$PROJECT_DIR$/.idea/member.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/member-spring.main.iml" filepath="$PROJECT_DIR$/.idea/modules/member-spring.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Festival-Event-Server.iml" filepath="$PROJECT_DIR$/.idea/Festival-Event-Server.iml" />
     </modules>
   </component>
 </project>
