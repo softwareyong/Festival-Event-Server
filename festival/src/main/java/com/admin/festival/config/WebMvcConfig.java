@@ -5,6 +5,7 @@ import com.admin.festival.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -20,7 +21,16 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new SessionInterceptor(memberService))
-                .addPathPatterns("/admin/festival/api/**")
+//                .addPathPatterns("/admin/festival/api/**")
                 .addPathPatterns("/event/**");
     }
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/api/visitor/count")
+                //.addMapping("/**")
+                .allowCredentials(true)
+                .allowedOrigins("http://ip:3000/");
+    }
+
 }

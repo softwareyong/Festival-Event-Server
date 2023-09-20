@@ -5,56 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6785ad86-11bb-46f8-aa7e-196b1aa05d05" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/member.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/member-spring.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/MemberSpringApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/config/WebMvcConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/config/interceptor/SessionInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/controller/EventApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/controller/EventController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/controller/FestivalController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/controller/MemberApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/controller/MemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/dto/EventDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/dto/MemberDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/dto/event/BoxDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/dto/event/DressDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/dto/event/TicketDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/entity/EventEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/entity/MemberEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/repository/EventRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/repository/MemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/service/EventClientService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/service/EventService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/java/member/memberspring/service/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/resources/templates/event.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/resources/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/resources/templates/save.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/resources/templates/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/main/resources/templates/toggle_btn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/test/java/member/memberspring/MemberSpringApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring/member-spring/src/test/java/member/memberspring/controller/MemberControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-spring_ver1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/FestivalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/FestivalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/CounterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/CounterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/service/VisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/service/VisitorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +31,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="festival" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -80,6 +45,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,15 +58,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/PC/Desktop/Festival-Event-Server",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/Festival-Event-Server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d6426de8f1a3d5e4e40b0ba9156f99ef&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -106,7 +86,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694937656722</updated>
-      <workItem from="1694937657810" duration="23000" />
+      <workItem from="1694937657810" duration="8440000" />
+      <workItem from="1695033599020" duration="3296000" />
+      <workItem from="1695199498903" duration="147000" />
+      <workItem from="1695200029162" duration="3428000" />
+      <workItem from="1695203715987" duration="135000" />
     </task>
     <servers />
   </component>
