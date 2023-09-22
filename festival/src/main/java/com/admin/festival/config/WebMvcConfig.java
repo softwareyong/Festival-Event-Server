@@ -21,16 +21,18 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new SessionInterceptor(memberService))
-//                .addPathPatterns("/admin/festival/api/**")
-                .addPathPatterns("/event/**");
+                .addPathPatterns("/admin/festival/api/**");
+//                .addPathPatterns("/event/**");
     }
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/visitor/count")
-                //.addMapping("/**")
+        registry
+                //.addMapping("/api/visitor/count")
+                .addMapping("/**")
                 .allowCredentials(true)
                 .allowedOrigins("http://ip:3000/");
+//                .allowedOrigins("http://ip:3000/#/event/seatdraw");
     }
 
 }

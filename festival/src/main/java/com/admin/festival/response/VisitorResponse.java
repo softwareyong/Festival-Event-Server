@@ -1,8 +1,6 @@
-package com.admin.festival.Response;
-
+package com.admin.festival.response;
 public class VisitorResponse {
     private Long count;
-
 
     public VisitorResponse(Long count) {
         this.count = count;
@@ -15,4 +13,5 @@ public class VisitorResponse {
     public void setCount(Long count) {
         this.count = count;
     }
+
 }

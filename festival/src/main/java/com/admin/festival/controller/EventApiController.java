@@ -6,6 +6,7 @@ import com.admin.festival.entity.EventEntity;
 import com.admin.festival.service.EventService;
 import com.admin.festival.service.MemberService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,6 @@ import java.util.Map;
 public class EventApiController {
 
     private final EventService eventService;
-    private final MemberService memberService;
 
     // 모든 정보 요청
     // 관리자 페이지 api
@@ -53,27 +53,24 @@ public class EventApiController {
     }
 
     @PatchMapping("/ticket_change/{count}")
+    @CacheEvict(cacheNames = "ticket", allEntries = true) // "box" 캐시를 비우기
     public Map<String, Integer> ticket (@PathVariable("count") int count){
 
         // ticket_update 메서드 호출
         eventService.ticket_update(count);
-
         // count 값을 Map에 담아서 JSON으로 반환
         Map<String, Integer> response = new HashMap<>();
         response.put("ticket", count);
         return response;
     }
-
     @PatchMapping("/box_toggle/{idx}")
+    @CacheEvict(cacheNames = "box", allEntries = true) // "box" 캐시를 비우기
     public Map<String, Integer> toggleTreasure(@PathVariable("idx") int idx){
 
         // 박스 번호만 넘어오면
         // entity에서 번호 조회해서
         // 그값을 토글해서 바꿔준다.
-
-        // treasure_toggle 메서드 호출
         eventService.box_toggle(idx);
-
         // value를 int로 파싱하여 사용
         Map<String, Integer> response = new HashMap<>();
         response.put("value", idx);
@@ -82,12 +79,10 @@ public class EventApiController {
 
     // 박스 API
     @PatchMapping("/dress_toggle/{idx}")
+    @CacheEvict(cacheNames = "dress", allEntries = true) // "dress" 캐시를 비우기
     public Map<String, Integer> toggleDress(@PathVariable("idx") int idx){
 
-        // treasure_toggle 메서드 호출
         eventService.dress_toggle(idx);
-
-        // value를 int로 파싱하여 사용
         Map<String, Integer> response = new HashMap<>();
         response.put("value", idx);
         return response;

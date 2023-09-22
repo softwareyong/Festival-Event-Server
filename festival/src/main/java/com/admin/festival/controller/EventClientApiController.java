@@ -1,11 +1,14 @@
 package com.admin.festival.controller;
 
 
+import com.admin.festival.dto.EventDTO;
 import com.admin.festival.dto.event.*;
 import com.admin.festival.service.*;
 import com.admin.festival.entity.EventEntity;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,29 +23,22 @@ import javax.servlet.http.HttpSession;
 public class EventClientApiController {
 
     private final EventService eventService;
-    private final MemberService memberService;
 
     @GetMapping("/event_all")
-    public ResponseEntity<EventEntity> getEventById(HttpSession session) {
-        String loginName = (String) session.getAttribute("loginName");
-
-        System.out.println("하이"+loginName);
-
-        if (loginName != null && memberService.isSessionUserValid(loginName)) {
-            // 세션에 로그인 정보가 있을 때만 실행
-            EventEntity eventEntity = eventService.getAllEventInfo();
-            if (eventEntity != null) {
-                return ResponseEntity.ok(eventEntity);
-            } else {
-                return ResponseEntity.notFound().build();
-            }
+//    @Cacheable(cacheNames = "eventAll")
+    public ResponseEntity<EventEntity> getEventById() {
+        System.out.println();
+        EventEntity eventEntity = eventService.getAllEventInfo();
+        if (eventEntity != null) {
+            return ResponseEntity.ok(eventEntity);
         } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+            return ResponseEntity.notFound().build();
         }
     }
 
     // 1. 티켓 API
     @GetMapping("/ticket")
+    @Cacheable(cacheNames = "ticket")
     public ResponseEntity<TicketDTO> getTicketInfo(){
         TicketDTO ticketDTO = eventService.getAllTicketInfo();
         return ResponseEntity.ok(ticketDTO);
@@ -50,6 +46,7 @@ public class EventClientApiController {
 
     // 2. 보물상자 API
     @GetMapping("/box")
+    @Cacheable(cacheNames = "box")
     public ResponseEntity<BoxDTO> getBoxInfo(){
         BoxDTO boxDTO = eventService.getAllBoxInfo();
         return ResponseEntity.ok(boxDTO);
@@ -57,6 +54,7 @@ public class EventClientApiController {
 
     // 3. 드레스코드 API
     @GetMapping("/dress")
+    @Cacheable(cacheNames = "dress")
     public ResponseEntity<DressDTO> getDressInfo(){
         DressDTO dressDTO = eventService.getAllDressInfo();
         return ResponseEntity.ok(dressDTO);
