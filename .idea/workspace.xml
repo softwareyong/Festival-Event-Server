@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6785ad86-11bb-46f8-aa7e-196b1aa05d05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/response/VisitorResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/FestivalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/FestivalApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/Response/VisitorResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/CounterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/CounterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/EventApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/EventApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/EventClientApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/EventClientApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/VisitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/controller/VisitorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/entity/VisitorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/entity/VisitorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/repository/VisitorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/repository/VisitorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/service/VisitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/festival/src/main/java/com/admin/festival/service/VisitorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +114,9 @@
       <workItem from="1695280677006" duration="4426000" />
       <workItem from="1695285123690" duration="2524000" />
       <workItem from="1695287661830" duration="15535000" />
-      <workItem from="1695365585895" duration="2864000" />
+      <workItem from="1695365585895" duration="5731000" />
+      <workItem from="1695419777743" duration="8206000" />
+      <workItem from="1695624489124" duration="82000" />
     </task>
     <servers />
   </component>
